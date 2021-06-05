@@ -24,7 +24,6 @@ int main()
 			else if(v[i]==0&&pos!=-1)
 			{
 				arr[i].push_back(i-pos);//for all ones.
-				cout<<i<<' ';
 			}
 			else if(v[i]==0)
             {
@@ -32,7 +31,6 @@ int main()
             }
 
 		}
-		cout<<endl;
 		 pos=0;
 		 for(int i=n-1;i>=0;i--)
 		 {
@@ -43,12 +41,10 @@ int main()
 		 	else if(v[i]==0&&pos)
 		 	{
 		 		arr[i].push_back(pos-i);//for all two.
-		 		cout<<pos-i<<' '<<i<<endl;
 		 	}
 		 	else if(v[i]==0)
                 arr[i].push_back(10000000);
 		 }
-
 		for(int i=0;i<m;i++)
 		{
 			int x;
